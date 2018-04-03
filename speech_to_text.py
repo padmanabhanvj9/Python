@@ -9,7 +9,7 @@ app = Flask(__name__)
 def jk():
    r=sr.Recognizer()
    with sr.Microphone() as source:
-       print('say something ')
+       print('say something')
        audio=r.listen(source)
    try:
        #print('google thinks you said:\n'+r.recognize_google(audio))
