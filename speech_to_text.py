@@ -9,7 +9,6 @@ app = Flask(__name__)
 def jk():
    r=sr.Recognizer()
    with sr.Microphone() as source:
-       return 'say something'
        print('say something ')
        audio=r.listen(source)
    try:
